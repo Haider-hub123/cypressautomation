@@ -1,5 +1,5 @@
 describe('File upload', function() {
-  it.skip('single file upload', function() {
+  it('single file upload', function() {
     cy.visit('https://the-internet.herokuapp.com/upload');
     cy.get('#file-upload').attachFile({filePath:'iftikhar.Ahmed.pdf',fileName:'myfile.pdf'});
     cy.get('#file-submit').click();
