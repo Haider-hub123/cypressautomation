@@ -12,7 +12,7 @@ describe('My test suite', function() {
         cy.get("button[type='submit']").click();
         
         // Wait for a short time before checking the result
-        cy.wait(1000); // Introducing delay for better readability of test execution
+        cy.wait(5000); // Introducing delay for better readability of test execution
 
         if(userdata.Username === 'Admin' && userdata.Password === 'admin123') {
           // Ensure successful login message appears
