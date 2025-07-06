@@ -40,11 +40,4 @@ cy.log("**** searhing*****")
    cy.log("****  Advance Searhing*****")
   })
 
-
-  it('listing product', function() {
-
-   cy.log("**** search listing product*****")
-  })
-
-
 })
