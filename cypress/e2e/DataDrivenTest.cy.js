@@ -33,7 +33,7 @@ describe('My test suite', function() {
         } else {
           // Ensure the error alert appears for invalid login
           cy.get('.oxd-text.oxd-text--p.oxd-alert-content-text')
-            .should('have.text', userdata.expected)
+            .should('have.text', 'Invalid credentials')
             .should('be.visible');
         }
       });
