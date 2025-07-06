@@ -8,7 +8,7 @@ describe('File upload', function() {
    
   })
 
-   it.skip('single file upload -  rename', function() {
+   it('single file upload -  rename', function() {
     cy.visit('https://the-internet.herokuapp.com/upload');
     cy.get('#file-upload').attachFile({filePath:'iftikhar.Ahmed.pdf',fileName:'myfile.pdf'});
     cy.get('#file-submit').click();
@@ -18,7 +18,7 @@ describe('File upload', function() {
   })
 
 
-  it.skip('single file upload  drag and drop', function() {
+  it('single file upload  drag and drop', function() {
     cy.visit('https://the-internet.herokuapp.com/upload');
     cy.get('#drag-drop-upload').attachFile("iftikhar.Ahmed.pdf",{subjectType:'drag-n-drop'})
     cy.wait(5000);
