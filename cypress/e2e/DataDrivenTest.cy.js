@@ -1,10 +1,10 @@
 describe('My test suite', function() {
 
   it('Data driven test', function() {
-    cy.fixture('OrangeHRM.json').then((data) => {
+    cy.fixture('OrangeHRM.json').then((Data) => {
       cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
       
-      data.forEach((userdata) => {
+      Data.forEach((userdata) => {
         // Clear inputs before entering new values with slower typing
         cy.get("input[placeholder='Username']").clear().type(userdata.Username, { delay: 100 });
         cy.get("input[placeholder='Password']").clear().type(userdata.Password, { delay: 100 });
