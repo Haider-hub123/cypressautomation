@@ -24,7 +24,7 @@ describe('File upload', function() {
     cy.wait(5000);
    cy.get('#drag-drop-upload > .dz-preview > .dz-details > .dz-filename > span').contains('iftikhar.Ahmed.pdf')
   })
-it.skip('multiple file uploaded', function() {
+it('multiple file uploaded', function() {
     cy.visit('https://davidwalsh.name/demo/multiple-file-upload.php');
 
     cy.get('#filesToUpload').attachFile(["cypress.pdf.pdf","iftikhar.Ahmed.pdf"])
