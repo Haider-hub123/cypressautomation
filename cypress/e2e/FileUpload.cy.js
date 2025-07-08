@@ -33,7 +33,7 @@ it('multiple file uploaded', function() {
   })
 
 
-it.only('shado down file upload', function() {
+it('shado down file upload', function() {
     cy.visit('http://8.213.19.53/auth/login');
 
   cy.get('.smart-browse-input',{includeShadowDom:true}).attachFile('cypress.pdf.pdf')
