@@ -8,7 +8,7 @@ describe('File upload', function() {
    
   })
 
-   it('single file upload -  rename', function() {
+   it.only('single file upload -  rename', function() {
     cy.visit('https://the-internet.herokuapp.com/upload');
     cy.get('#file-upload').attachFile({filePath:'iftikhar.Ahmed.pdf',fileName:'myfile.pdf'});
     cy.get('#file-submit').click();
