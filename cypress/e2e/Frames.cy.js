@@ -25,7 +25,6 @@ describe('Handling frame', function () {
       .clear()
       .type('welcome');
   });
-
   
   it.only('approach3  using cypress plugin', function () {
     // Step 1: Visit the iframe page directly

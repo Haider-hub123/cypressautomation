@@ -33,7 +33,6 @@ cy.get('.oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module').should('hav
 it.only('LoginTest', function() {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 cy.fixture('TestLogin.json').then((data)=>{
-
   const ln= new Login();
    ln.setUserName(data.Username);
    ln.setPassword(data.Password);
@@ -41,9 +40,6 @@ cy.fixture('TestLogin.json').then((data)=>{
    ln.verifyLogin();
 
 
-})
-
-
-   
+})  
 })
 })
