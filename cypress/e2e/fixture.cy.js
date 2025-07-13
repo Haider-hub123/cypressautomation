@@ -1,7 +1,7 @@
 import Login from "../pageobjects/LoginPage2.js";
 describe('My Test', function() {
 
-  it.skip('My first test under demo', function() {
+  it('My first test under demo', function() {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
     cy.fixture('TestLogin.json').then((data)=>{
